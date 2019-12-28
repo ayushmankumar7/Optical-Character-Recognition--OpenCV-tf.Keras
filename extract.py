@@ -9,6 +9,7 @@ ret, thresh = cv2.threshold(grey.copy(), 75, 255, cv2.THRESH_BINARY_INV)
 
 contours, _ = cv2.findContours(thresh.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
 
+
 model  = load_model('mnist.h5')
 print(model.summary())
 preprocessed_digits = []
