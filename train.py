@@ -4,7 +4,7 @@ import data_preprocess
 
 def fit_model():
 
-    X_train, y_train, X_test, y_test = data_preprocess.data_preprocessed()
+    X_train, y_train, X_test, y_test,_ = data_preprocess.data_preprocessed()
     mo = model.myModel()
 
     history = mo.fit(X_train, y_train, epochs = 10)
